@@ -1,6 +1,6 @@
 {
-  "version": "v1.4.6",
-  "versionCode": 48,
-  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.4.6.zip",
-  "changelog": "移除全部FFC逻辑(保留原有限流/手动/温度保护);电流读取按真机实测校准(usb/current_now优先+1mA噪声过滤)"
+  "version": "v1.4.7",
+  "versionCode": 49,
+  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.4.7.zip",
+  "changelog": "votable 单位修正: 恢复 divider=2(实测栈按2倍执行, 写入值=目标的一半); 移除 WebUI 底部提示"
 }
