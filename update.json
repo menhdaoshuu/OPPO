@@ -1,6 +1,6 @@
 {
-  "version": "v1.4.8",
-  "versionCode": 50,
-  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.4.8.zip",
-  "changelog": "电流读取改为 Scene 同款方式(battery uevent POWER_SUPPLY_CURRENT_NOW, 兜底 usb INPUT_CURRENT_NOW/节点链); 删除 WebUI 黄色警告"
+  "version": "v1.4.9",
+  "versionCode": 51,
+  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.4.9.zip",
+  "changelog": "电流换算修正(CURRENT_NOW为mA负值, 取反x1000=真实值); 自动刷新3秒; votable栏改为实时功率(W)"
 }
