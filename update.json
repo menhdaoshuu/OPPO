@@ -1,6 +1,6 @@
 {
-  "version": "v1.3.3",
-  "versionCode": 41,
-  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.3.zip",
-  "changelog": "移除 WebUI 中的 FFC 状态栏显示（写入行为保留常驻）；优化模块体积（移除模块内说明文件、HTML 压缩、zip 最高压缩率）"
+  "version": "v1.4.6",
+  "versionCode": 48,
+  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.4.6.zip",
+  "changelog": "移除全部FFC逻辑(保留原有限流/手动/温度保护);电流读取按真机实测校准(usb/current_now优先+1mA噪声过滤)"
 }
