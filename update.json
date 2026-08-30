@@ -1,6 +1,6 @@
 {
-  "version": "v1.5.0",
-  "versionCode": 52,
-  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.5.0.zip",
-  "changelog": "实时功率修复: voltage_now 自动识别mV单位(×1000转uV), 功率=电压×电流 正常显示"
+  "version": "v1.3.4",
+  "versionCode": 53,
+  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.4.zip",
+  "changelog": "正式版 v1.3.4：清理脚本外置更名 FindX9快充残留清理.sh(兼容清理旧命名)；电流/功率单位已校准；FFC已移除"
 }
