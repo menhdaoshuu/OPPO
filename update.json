@@ -1,6 +1,6 @@
 {
-  "version": "v1.3.2",
-  "versionCode": 40,
-  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.2.zip",
-  "changelog": "更新通道优化：检查走 GitHub raw(无缓存延迟)，下载走 jsDelivr CDN；FFC 强制快充常驻"
+  "version": "v1.3.3",
+  "versionCode": 41,
+  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.3.zip",
+  "changelog": "移除 WebUI 中的 FFC 状态栏显示（写入行为保留常驻）；优化模块体积（移除模块内说明文件、HTML 压缩、zip 最高压缩率）"
 }
