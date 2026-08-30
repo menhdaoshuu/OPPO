@@ -1,6 +1,6 @@
 {
-  "version": "v1.4.7",
-  "versionCode": 49,
-  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.4.7.zip",
-  "changelog": "votable 单位修正: 恢复 divider=2(实测栈按2倍执行, 写入值=目标的一半); 移除 WebUI 底部提示"
+  "version": "v1.4.8",
+  "versionCode": 50,
+  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.4.8.zip",
+  "changelog": "电流读取改为 Scene 同款方式(battery uevent POWER_SUPPLY_CURRENT_NOW, 兜底 usb INPUT_CURRENT_NOW/节点链); 删除 WebUI 黄色警告"
 }
