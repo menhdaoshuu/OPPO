@@ -1,6 +1,6 @@
 {
-  "version": "v1.3.1",
-  "versionCode": 39,
-  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.1.zip",
-  "changelog": "FFC 强制快充改为常驻（开机即生效，无开关）；修复工程模式无线项无关（已确认非本模块）；手动上限 13000mA 保留"
+  "version": "v1.3.2",
+  "versionCode": 40,
+  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.2.zip",
+  "changelog": "更新通道优化：检查走 GitHub raw(无缓存延迟)，下载走 jsDelivr CDN；FFC 强制快充常驻"
 }
