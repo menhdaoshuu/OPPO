@@ -1,6 +1,6 @@
 {
-  "version": "v1.3.4",
-  "versionCode": 56,
+  "version": "v1.3.4正式版",
+  "versionCode": 57,
   "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.4.zip",
-  "changelog": "关闭>9200mA二次确认弹窗(直接应用,保留红色警示横幅); 弹窗代码全部清除"
+  "changelog": "移除刷写界面的测试版字样; 版本号固定带【正式版】标记(压缩包文件名保持ASCII)"
 }
