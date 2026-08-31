@@ -1,6 +1,6 @@
 {
-  "version": "v1.3.4正式版",
-  "versionCode": 54,
-  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.4%E6%AD%A3%E5%BC%8F%E7%89%88.zip",
-  "changelog": "正式版 v1.3.4：清理脚本外置 FindX9快充残留清理.sh；电流/功率单位校准；FFC 已移除；滑块 13000mA"
+  "version": "v1.3.4",
+  "versionCode": 56,
+  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.4.zip",
+  "changelog": "关闭>9200mA二次确认弹窗(直接应用,保留红色警示横幅); 弹窗代码全部清除"
 }
