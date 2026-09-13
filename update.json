@@ -1,6 +1,6 @@
 {
-  "version": "v1.3.4正式版",
-  "versionCode": 59,
-  "zipUrl": "https://cdn.jsdelivr.net/gh/menhdaoshuu/OPPO@main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.4.zip",
-  "changelog": "正式版59：亮屏快充解锁；description 已按用户原文锁定"
+  "version": "v1.3.5修复版",
+  "versionCode": 73,
+  "zipUrl": "https://raw.githubusercontent.com/menhdaoshuu/OPPO/main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.5fix.zip",
+  "changelog": "v1.3.5修复版(code73): 修复亮屏解锁逻辑; WebUI精简(移除模糊开关/默认开启模糊, 移除闪电图标与副标题, 新增默认背景图); 刷入输出最大电流13000mA"
 }
