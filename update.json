@@ -1,6 +1,6 @@
 {
-  "version": "v1.3.5修复版",
-  "versionCode": 73,
-  "zipUrl": "https://raw.githubusercontent.com/menhdaoshuu/OPPO/main/OPPO-FindX9-FastCharge-KSU-mod-v1.3.5fix.zip",
-  "changelog": "v1.3.5修复版(code73): 修复亮屏解锁逻辑; WebUI精简(移除模糊开关/默认开启模糊, 移除闪电图标与副标题, 新增默认背景图); 刷入输出最大电流13000mA"
+  "version": "v1.7.1",
+  "versionCode": 135,
+  "zipUrl": "https://raw.githubusercontent.com/menhdaoshuu/OPPO/main/OPPO-FindX9-FastCharge-KSU-mod-v1.7.1.zip",
+  "changelog": "v1.7.1 (code135): 清理脚本重写为 v1.2 并改为每次开机自动同步到 /storage/emulated/0/FindX9快充残留清理.sh（原来只在安装时复制一次，会导致手里的脚本是旧版）；清理脚本新增：停止 fcweb/模块 watchdog、处理载体 App、可选 --uninstall-app / --restore-hans。新增 root 手段尝试关闭 ColorOS17 binder 冻结（device_config put activity_manager freeze_binder_enabled false，需重启生效）。移除会导致最近任务出现纯黑空白卡片的 1x1 常驻 Activity。保留静音音频 + MediaSession + 心跳检测保活。显示真实带正负功率。"
 }
