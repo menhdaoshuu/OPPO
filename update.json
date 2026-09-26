@@ -1,6 +1,6 @@
 {
-  "version": "v1.8.40",
-  "versionCode": 216,
-  "zipUrl": "https://raw.githubusercontent.com/menhdaoshuu/OPPO/main/OPPO-FindX9-FastCharge-KSU-mod-v1.8.40.zip",
-  "changelog": "v1.8.40 (code216): 本次为自 v1.7.1 (code135) 以来的累积更新, 跨度较大, 建议更新。① 界面架构重构: 载体 App 从手写原生界面改为 WebView 宿主, 直接加载模块 webroot/index.html —— App 与 KernelSU 管理器从此只有一套 UI, 不再出现两端观感不一致; 新增 ksu 桥把操作翻译成私有目录读写, App 依旧不需要 root。② 修复「自动档/手动锁定频繁来回跳」: onResume 整页 reload 打回档位初值 + 跨进程文件非原子写读到半截 JSON, 现改为静默刷新并把跨进程文件全部改走「先写 .tmp 再改名」。③ 修复 App 端背景图比 WebUI 模糊: 内嵌默认图原仅 720x860 被放大 3.2 倍, 已换成 2509x3000 并转 JPEG —— 包体反而减约 520KB、清晰度提升 3.2 倍。④ 新增「两端共享背景图」: 在管理器里选的图 App 端也能用。⑤ 修复电流滑块会自动弹回已应用值。⑥ 修复深色模式下电流滑块变成「黑条」(轨道/已填充/拇指全部自绘, 与系统深浅色解耦)。⑦ 新增彩蛋: 连续 5 次点「刷新」(相邻间隔需≤2 秒)弹出提示, 含 复制 / 朕知道了。⑧ 两个弹窗新增动态浮光。⑨ 使用须知弹窗改为 #FEA3C4 浅粉卡片 + 深色文字, 观感更透明。⑩ 延续流体云保活(静音音频 + MediaSession + 心跳检测解冻), 残留清理脚本改为每次开机自动同步到 /storage/emulated/0/。载体 App versionCode 64 / versionName 12.8。"
+  "version": "v1.8.41",
+  "versionCode": 217,
+  "zipUrl": "https://raw.githubusercontent.com/menhdaoshuu/OPPO/main/OPPO-FindX9-FastCharge-KSU-mod-v1.8.41.zip",
+  "changelog": "v1.8.41 (code217): 修复 App 持续弹「状态获取异常 (errno=1)」、状态格全空 —— 根因是 common.sh 向载体 App 私有目录写 status.json 等 5 个文件时, 属主是在 mv 之后才 chown, 且 uid 解析失败时会被静默跳过, 文件停在 root:root 600, App 读不到。现改为「先设属主/权限/SELinux 标签再原子替换」, uid 解析增加第三条兜底(App 目录自身属主), 并补上 restorecon。⚠️ 装完必须重启守护进程(或重启手机)才生效。另修复 fluid off 时 stopped 标记写不上的同类问题。（更早的改动见下方 v1.8.40 及之前的说明。）v1.8.40 (code216): 本次为自 v1.7.1 (code135) 以来的累积更新, 跨度较大, 建议更新。① 界面架构重构: 载体 App 从手写原生界面改为 WebView 宿主, 直接加载模块 webroot/index.html —— App 与 KernelSU 管理器从此只有一套 UI, 不再出现两端观感不一致; 新增 ksu 桥把操作翻译成私有目录读写, App 依旧不需要 root。② 修复「自动档/手动锁定频繁来回跳」: onResume 整页 reload 打回档位初值 + 跨进程文件非原子写读到半截 JSON, 现改为静默刷新并把跨进程文件全部改走「先写 .tmp 再改名」。③ 修复 App 端背景图比 WebUI 模糊: 内嵌默认图原仅 720x860 被放大 3.2 倍, 已换成 2509x3000 并转 JPEG —— 包体反而减约 520KB、清晰度提升 3.2 倍。④ 新增「两端共享背景图」: 在管理器里选的图 App 端也能用。⑤ 修复电流滑块会自动弹回已应用值。⑥ 修复深色模式下电流滑块变成「黑条」(轨道/已填充/拇指全部自绘, 与系统深浅色解耦)。⑦ 新增彩蛋: 连续 5 次点「刷新」(相邻间隔需≤2 秒)弹出提示, 含 复制 / 朕知道了。⑧ 两个弹窗新增动态浮光。⑨ 使用须知弹窗改为 #FEA3C4 浅粉卡片 + 深色文字, 观感更透明。⑩ 延续流体云保活(静音音频 + MediaSession + 心跳检测解冻), 残留清理脚本改为每次开机自动同步到 /storage/emulated/0/。载体 App versionCode 64 / versionName 12.8。"
 }
