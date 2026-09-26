@@ -1,6 +1,6 @@
 {
-  "version": "v1.7.1",
-  "versionCode": 135,
-  "zipUrl": "https://raw.githubusercontent.com/menhdaoshuu/OPPO/main/OPPO-FindX9-FastCharge-KSU-mod-v1.7.1.zip",
-  "changelog": "v1.7.1 (code135): 清理脚本重写为 v1.2 并改为每次开机自动同步到 /storage/emulated/0/FindX9快充残留清理.sh（原来只在安装时复制一次，会导致手里的脚本是旧版）；清理脚本新增：停止 fcweb/模块 watchdog、处理载体 App、可选 --uninstall-app / --restore-hans。新增 root 手段尝试关闭 ColorOS17 binder 冻结（device_config put activity_manager freeze_binder_enabled false，需重启生效）。移除会导致最近任务出现纯黑空白卡片的 1x1 常驻 Activity。保留静音音频 + MediaSession + 心跳检测保活。显示真实带正负功率。"
+  "version": "v1.8.40",
+  "versionCode": 216,
+  "zipUrl": "https://raw.githubusercontent.com/menhdaoshuu/OPPO/main/OPPO-FindX9-FastCharge-KSU-mod-v1.8.40.zip",
+  "changelog": "v1.8.40 (code216): 本次为自 v1.7.1 (code135) 以来的累积更新, 跨度较大, 建议更新。① 界面架构重构: 载体 App 从手写原生界面改为 WebView 宿主, 直接加载模块 webroot/index.html —— App 与 KernelSU 管理器从此只有一套 UI, 不再出现两端观感不一致; 新增 ksu 桥把操作翻译成私有目录读写, App 依旧不需要 root。② 修复「自动档/手动锁定频繁来回跳」: onResume 整页 reload 打回档位初值 + 跨进程文件非原子写读到半截 JSON, 现改为静默刷新并把跨进程文件全部改走「先写 .tmp 再改名」。③ 修复 App 端背景图比 WebUI 模糊: 内嵌默认图原仅 720x860 被放大 3.2 倍, 已换成 2509x3000 并转 JPEG —— 包体反而减约 520KB、清晰度提升 3.2 倍。④ 新增「两端共享背景图」: 在管理器里选的图 App 端也能用。⑤ 修复电流滑块会自动弹回已应用值。⑥ 修复深色模式下电流滑块变成「黑条」(轨道/已填充/拇指全部自绘, 与系统深浅色解耦)。⑦ 新增彩蛋: 连续 5 次点「刷新」(相邻间隔需≤2 秒)弹出提示, 含 复制 / 朕知道了。⑧ 两个弹窗新增动态浮光。⑨ 使用须知弹窗改为 #FEA3C4 浅粉卡片 + 深色文字, 观感更透明。⑩ 延续流体云保活(静音音频 + MediaSession + 心跳检测解冻), 残留清理脚本改为每次开机自动同步到 /storage/emulated/0/。载体 App versionCode 64 / versionName 12.8。"
 }
